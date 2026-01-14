@@ -1,0 +1,132 @@
+* {
+      margin: 0;
+        padding: 0;
+          box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            }
+
+            html {
+              scroll-behavior: smooth;
+              }
+
+              body {
+                background: #f4f6f8;
+                  color: #333;
+                  }
+
+                  /* NAVBAR */
+                  .navbar {
+                    position: fixed;
+                      top: 0;
+                        width: 100%;
+                          background: #0f172a;
+                            color: white;
+                              padding: 15px 20px;
+                                display: flex;
+                                  justify-content: space-between;
+                                    align-items: center;
+                                      z-index: 1000;
+                                      }
+
+                                      .navbar a {
+                                        color: white;
+                                          margin-left: 15px;
+                                            text-decoration: none;
+                                            }
+
+                                            /* MAIN */
+                                            main {
+                                              padding-top: 90px;
+                                                display: flex;
+                                                  gap: 30px;
+                                                    padding-left: 20px;
+                                                      padding-right: 20px;
+                                                      }
+
+                                                      /* PRODUCTS */
+                                                      .products-container {
+                                                        flex: 3;
+                                                          display: grid;
+                                                            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                                                              gap: 20px;
+                                                              }
+
+                                                              .product-card {
+                                                                background: white;
+                                                                  border-radius: 10px;
+                                                                    padding: 15px;
+                                                                      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                                                                        text-align: center;
+                                                                        }
+
+                                                                        .image-slider {
+                                                                          position: relative;
+                                                                          }
+
+                                                                          .image-slider img {
+                                                                            width: 100%;
+                                                                              border-radius: 8px;
+                                                                              }
+
+                                                                              .image-slider button {
+                                                                                position: absolute;
+                                                                                  top: 45%;
+                                                                                    background: rgba(0,0,0,0.6);
+                                                                                      color: white;
+                                                                                        border: none;
+                                                                                          padding: 5px 10px;
+                                                                                            cursor: pointer;
+                                                                                            }
+
+                                                                                            .prev { left: 5px; }
+                                                                                            .next { right: 5px; }
+
+                                                                                            .price {
+                                                                                              font-weight: bold;
+                                                                                                color: #0f766e;
+                                                                                                }
+
+                                                                                                .add-to-cart {
+                                                                                                  margin-top: 10px;
+                                                                                                    background: #2563eb;
+                                                                                                      color: white;
+                                                                                                        border: none;
+                                                                                                          padding: 8px;
+                                                                                                            width: 100%;
+                                                                                                              border-radius: 5px;
+                                                                                                                cursor: pointer;
+                                                                                                                }
+
+                                                                                                                /* CART */
+                                                                                                                .cart-container {
+                                                                                                                  flex: 1;
+                                                                                                                    background: white;
+                                                                                                                      padding: 15px;
+                                                                                                                        border-radius: 10px;
+                                                                                                                          height: fit-content;
+                                                                                                                          }
+
+                                                                                                                          .cart-item {
+                                                                                                                            display: flex;
+                                                                                                                              justify-content: space-between;
+                                                                                                                                margin-bottom: 10px;
+                                                                                                                                }
+
+                                                                                                                                .cart-item button {
+                                                                                                                                  margin-left: 5px;
+                                                                                                                                  }
+
+                                                                                                                                  /* FOOTER */
+                                                                                                                                  footer {
+                                                                                                                                    text-align: center;
+                                                                                                                                      padding: 20px;
+                                                                                                                                        color: #555;
+                                                                                                                                        }
+
+                                                                                                                                        /* MOBILE */
+                                                                                                                                        @media (max-width: 768px) {
+                                                                                                                                          main {
+                                                                                                                                              flex-direction: column;
+                                                                                                                                                }
+                                                                                                                                                }
+}
